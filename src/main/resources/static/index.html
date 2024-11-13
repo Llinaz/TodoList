@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<h1>To-Do List</h1>
+    <input type="text" id="searchInput" placeholder="Поиск задач">
+    <button id="todayTasksBtn">Сегодня</button>
+    <button id="weekTasksBtn">На неделю</button>
+    <input type="date" id="datePicker">
+    <button id="sortBtn">Сортировать по дате</button>
+    <button id="incompleteTasksBtn">Невыполненные задачи</button>
+    <div id="tasksContainer"></div>
+</header>
+<main>
+    <div id="calendar"></div>
+    <ul id="taskList"></ul>
+</main>
+
+<div id="taskModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="taskTitle"></h2>
+        <p id="taskDescription"></p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script src="todo.js"></script>
+</body>
+</html>
